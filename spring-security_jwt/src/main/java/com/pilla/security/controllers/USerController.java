@@ -35,7 +35,9 @@ public class USerController {
 	
 	@GetMapping("users/{id}")
 	public Optional<User> getUser(@PathVariable long id) {
+		
 		return service.findById(id);
+		
 	}
 	@GetMapping("users")
 	public List<User> getAllUser() {
