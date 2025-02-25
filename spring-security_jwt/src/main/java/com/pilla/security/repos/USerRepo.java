@@ -7,6 +7,8 @@ import com.pilla.security.entities.User;
 @Repository
 public interface USerRepo extends JpaRepository<User, Long> {
 
+	com.pilla.security.entities.User findByUserName(String username);
+	
 	
 	
 }
